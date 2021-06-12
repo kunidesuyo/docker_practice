@@ -59,8 +59,9 @@ dockerでのチーム開発では
 docker-compose.ymlにコンテナの作成やマウントのオプションを記述
 
 ## 不具合
-BIOSのIntel VT(Intel Virtualization Technoloy)を有効にしているとパソコンが頻繁に落ちる問題発生  
+BIOSのIntel VT(Intel Virtualization Technoloy)を有効にして、Hyper-Vでdockerを動かすとパソコンが頻繁に落ちる問題発生  
 原因？はBIOSのバージョンが古いから？  
 Hyper-VではなくWSL2でdockerを動かすようにする  
 [参考サイト](https://cfautog.tokyo/2020/11/04/docker-for-windows-wsl2/#toc1)  
 WSL2でもIntel VTを有効にしないといけない…  
+WSL2で動かしてみて、パソコンが落ちないか確認中 
