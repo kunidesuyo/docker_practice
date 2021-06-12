@@ -56,4 +56,11 @@ dockerでのチーム開発では
 
 ## DockerComposeを使ったコンテナの管理
 [参考サイト](https://qiita.com/minato-naka/items/8b31d28823cabaa9487a)  
-docker-compose.ymlにコンテナの作成やマウントのオプションを記述  
+docker-compose.ymlにコンテナの作成やマウントのオプションを記述
+
+## 不具合
+BIOSのIntel VT(Intel Virtualization Technoloy)を有効にしているとパソコンが頻繁に落ちる問題発生  
+原因？はBIOSのバージョンが古いから？  
+Hyper-VではなくWSL2でdockerを動かすようにする  
+[参考サイト](https://cfautog.tokyo/2020/11/04/docker-for-windows-wsl2/#toc1)  
+WSL2でもIntel VTを有効にしないといけない…  
